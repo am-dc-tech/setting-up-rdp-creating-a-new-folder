@@ -48,12 +48,11 @@ Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
 
 ## What the command does
 
-- `Enable-NetFireWallRule` - Alows a Windows Firewall Rule
-- `DisplayGroup` - Specifies the group
-- `"RemoteDesktop"` - Chooses the Remote Desktop firewall rules
+- `Enable-NetFirewallRule` — Enables a Windows Firewall rule.
+- `-DisplayGroup` — Specifies which group of firewall rules to modify.
+- `"Remote Desktop"` — Selects the Remote Desktop firewall rules.
 
-Allows Remote Desktop traffic through the firewall so we can have the client connect to the host!
-
+**Purpose:** Allows Remote Desktop traffic through the firewall so the client can connect to the host.
 
 ## 4. Test the Connection to the host
 
@@ -63,6 +62,9 @@ Go to powershell in the host PC
 Test-Connection 192.168.x.x -Port 3389
 ```
 
+<img width="610" height="178" alt="4  test-connection" src="https://github.com/user-attachments/assets/e4457b95-cc27-4364-8d42-ba3b0ac903f0" />
+
+
 ### What the command does
 
 - `Test-NetConnection` - Tests the network connectivity
@@ -71,7 +73,16 @@ Test-Connection 192.168.x.x -Port 3389
 
 Can the computer reach this Virtual Machine on RDP port 3389?
 
-✅ True = Your computer can reach port 3389 on the VM.
+✅ TcpTestSucceeded : True = Your computer can reach port 3389 on the VM.
 
 
+## 5. Connect with Remote Desktop via the Client's PC
 
+- 'run' command in start menu
+- Type `mstsc`
+- Enter the host VM's ip address
+- Enter credential of the host VM
+
+<img width="405" height="238" alt="5 rd-sign-in" src="https://github.com/user-attachments/assets/609fa35f-b83b-4bf1-82c8-da1f3c540de6" />
+
+<img width="451" height="397" alt="6 mstsc-rd " src="https://github.com/user-attachments/assets/89323c40-e887-42af-9838-2cba50145f21" />
