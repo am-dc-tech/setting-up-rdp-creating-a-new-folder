@@ -106,3 +106,11 @@ In the Remote Desktop Protocol session:
 - Verify if the new folder is there
 
   <img width="1022" height="380" alt="7  Verify-RDP-Folder-In-VM-Host" src="https://github.com/user-attachments/assets/3793daf6-a108-40c9-bdab-9f5985264e68" />
+
+## What I learned
+
+- RDP depends entirely if the network can be reached first before doing anything else.
+- Enabling RDP through the GUI opens firewall automatically
+- `Test-NetConnection` on port 3389 is quick way to see the problem with RDP
+- Closing RDP window leaves the session running but signing out will end it
+
