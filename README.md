@@ -32,8 +32,9 @@ ipconfig
 - Allow remote connections to this computer
 - `Remote Desktop` should be enabled
 
+<img width="761" height="511" alt="2 enable-remote-desktop" src="https://github.com/user-attachments/assets/099a1b09-89d6-4943-a776-a13bec18d61d" />
 
- <img width="766" height="506" alt="2  enable-rd" src="https://github.com/user-attachments/assets/52d7fc32-82ee-4da1-a8d8-a425e114e4dd" />
+
 
 ## 3. Firewall Confirmation Rule
 
@@ -85,4 +86,23 @@ Can the computer reach this Virtual Machine on RDP port 3389?
 
 <img width="405" height="238" alt="5 rd-sign-in" src="https://github.com/user-attachments/assets/609fa35f-b83b-4bf1-82c8-da1f3c540de6" />
 
-<img width="451" height="397" alt="6 mstsc-rd " src="https://github.com/user-attachments/assets/89323c40-e887-42af-9838-2cba50145f21" />
+<img width="451" height="397" alt="5 mstsc-rd " src="https://github.com/user-attachments/assets/d0d26160-d3cf-4a80-977d-1cb2d6a779e8" />
+
+
+## 6. Create the new folder
+
+In the Remote Desktop Protocol session:
+- Open file explorer
+- Go to `C:\CompanyData
+- Right-click and choose **New > Folder**
+- Name it "Remote Desktop Test Lab Folder"
+
+<img width="939" height="585" alt="7 Remote-Desktop-folder creation" src="https://github.com/user-attachments/assets/7fbb91cb-d7a9-443b-9718-72c310ac7064" />
+
+## 7. Sign out of RDP and Verify in Host VM
+
+- Exit out of RDP from client's PC
+- Connect to the host VM
+- Verify if the new folder is there
+
+  <img width="1022" height="380" alt="7  Verify-RDP-Folder-In-VM-Host" src="https://github.com/user-attachments/assets/3793daf6-a108-40c9-bdab-9f5985264e68" />
